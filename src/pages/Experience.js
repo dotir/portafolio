@@ -10,7 +10,7 @@ const experiences = [
 
 const Experience = () => (
   <section id="experience" className="container mx-auto p-8 bg-white shadow-2xl rounded-lg">
-    <h2 className="text-4xl font-bold text-center mb-8">Experience</h2>
+    <h2 className="text-4xl font-bold text-center mb-8">Mi Experiencia</h2>
     <div className="space-y-6">
       {experiences.map((experience, index) => (
         <div key={index} className="p-4 bg-gray-100 rounded-lg shadow-md">
