@@ -6,6 +6,11 @@ const experiences = [
     company: 'Veox',
     duration: 'Oct 2022 - Ene 2023',
   },
+  {
+    title: 'Soporte Técnico',
+    company: 'Ugel La Joya',
+    duration: 'Ene 2017 - Jul.2017'
+  }
 ];
 
 const Experience = () => (
