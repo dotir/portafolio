@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt, FaNodeJs, FaPython, FaJava, FaVuejs,FaPhp,FaBootstrap  } from 'react-icons/fa';
+import { FaReact,FaAngular , FaJsSquare, FaHtml5, FaCss3Alt, FaNodeJs, FaPython, FaJava, FaVuejs,FaPhp,FaBootstrap  } from 'react-icons/fa';
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql,SiPostgresql,SiNuxtdotjs,SiDjango  } from "react-icons/si";
 
@@ -7,6 +7,8 @@ const technologies = {
   frontend: [
     { name: 'JavaScript', icon: <FaJsSquare size={48} className="text-yellow-500" />, level: 'Intermedio' },
     { name: 'React', icon: <FaReact size={48} className="text-blue-500" />, level: 'Intermedio' },
+    // angular
+    { name: 'Angular', icon: <FaAngular size={48} className="text-red-600" />, level: 'Intermedio' },
     { name: 'HTML5', icon: <FaHtml5 size={48} className="text-orange-600" />, level: 'Intermedio' },
     { name: 'Tailwind CSS', icon: <RiTailwindCssFill size={48} className="text-blue-400" />, level: 'Intermedio' },
     { name: 'Vue.js', icon: <FaVuejs size={48} className="text-green-700" />, level: 'Intermedio' },
