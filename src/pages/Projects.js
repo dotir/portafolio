@@ -30,10 +30,10 @@ const projects = [
 ];
 
 const Projects = () => (
-    <section id="projects" className="bg-gray-100 py-16">
+<section id="projects" className="bg-gray-100 dark:bg-gray-900 py-16">
         <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-4">Mis Proyectos</h2>
-            <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+<h2 className="text-4xl font-bold text-center mb-4 text-gray-800 dark:text-gray-200">Mis Proyectos</h2>
+<p className="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
                 Aquí hay una selección de los proyectos en los que he trabajado. 
                 Cada uno representa diferentes desafíos y soluciones tecnológicas.
             </p>

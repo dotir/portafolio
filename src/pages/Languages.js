@@ -28,13 +28,13 @@ const technologies = {
 };
 
 const TechnologyCard = ({ title, technologies }) => (
-  <div className="bg-white p-6 rounded-lg shadow-lg">
-    <h3 className="text-2xl font-bold text-center mb-6">{title}</h3>
+<div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+<h3 className="text-2xl font-bold text-center mb-6 text-gray-800 dark:text-gray-200">{title}</h3>
     <div className="grid grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
       {technologies.map((tech, index) => (
         <div key={index} className="flex flex-col items-center">
           {tech.icon}
-          <span className="mt-2 text-lg font-semibold">{tech.name}</span>
+<span className="mt-2 text-lg font-semibold text-gray-800 dark:text-gray-200">{tech.name}</span>
           <span className={`mt-1 px-3 py-1 rounded-full text-sm ${
             tech.level === 'Avanzado' ? 'bg-green-100 text-green-800' :
             tech.level === 'Intermedio' ? 'bg-blue-100 text-blue-800' :

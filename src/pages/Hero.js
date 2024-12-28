@@ -2,17 +2,17 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaArrowDown, FaCode,FaFacebook } from 'react-icons/fa';
 
 const Hero = () => (
-  <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white min-h-screen flex items-center justify-center relative">
+<section className="bg-gradient-to-br from-blue-600 to-blue-800 dark:from-gray-900 dark:to-gray-700 text-white min-h-screen flex items-center justify-center relative">
     <div className="container mx-auto px-4">
       {/* Centered Content */}
       <div className="text-center max-w-3xl mx-auto space-y-6">
         <h2 className="text-xl mb-2">👋 Bienvenido a mi portafolio</h2>
-        <h1 className="text-5xl font-bold mb-4 animate-fade-in">
+<h1 className="text-5xl font-bold mb-4 animate-fade-in text-gray-100 dark:text-gray-200">
           Hola, Soy Irving Llerena
         </h1>
-        <p className="text-2xl mb-8">
+<p className="text-2xl mb-8 text-gray-200 dark:text-gray-400">
           Full Stack Developer
-          <span className="block text-blue-200 text-xl mt-2">
+<span className="block text-blue-200 dark:text-gray-300 text-xl mt-2">
             Apasionado por crear soluciones web innovadoras
           </span>
         </p>

@@ -31,9 +31,9 @@ const experiences = [
 ];
 
 const Experience = () => (
-  <section id="experience" className="py-16 bg-gray-50">
+<section id="experience" className="py-16 bg-gray-50 dark:bg-gray-900">
     <div className="container mx-auto px-4">
-      <h2 className="text-4xl font-bold text-center mb-12">Mi Experiencia</h2>
+<h2 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-gray-200">Mi Experiencia</h2>
       <div className="max-w-4xl mx-auto">
         {experiences.map((experience, index) => (
           <div key={index} className="relative mb-8 transform hover:scale-102 transition-transform duration-200">
@@ -42,14 +42,14 @@ const Experience = () => (
               <div className="absolute left-8 top-16 bottom-0 w-0.5 bg-blue-200" />
             )}
             
-            <div className="bg-white rounded-xl shadow-lg p-6 ml-16">
+<div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 ml-16">
               <div className="absolute left-0 top-6 bg-blue-500 rounded-full p-3">
                 <FaBriefcase className="text-white text-xl" />
               </div>
               
               <div className="mb-4">
-                <h3 className="text-2xl font-bold text-gray-800">{experience.title}</h3>
-                <div className="flex items-center space-x-2 text-gray-600 mt-2">
+<h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200">{experience.title}</h3>
+<div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 mt-2">
                   <FaBuilding />
                   <span>{experience.company}</span>
                   <span>•</span>
