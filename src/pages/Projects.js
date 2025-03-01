@@ -19,14 +19,14 @@ const projects = [
         demo: '#',
         technologies: ['Chrome Extension', 'FaceAPI', 'JavaScript']
     },
-    {
-        title: 'Bot de Música Discord',
-        description: 'Bot de música dockerizado para Discord con funcionalidades avanzadas',
-        image: '/project3.jpg',
-        repositorio: 'https://github.com/dotir/BotMusic_Olympus',
-        demo: '#',
-        technologies: ['Python', 'Discord.js', 'Docker']
-    }
+    // {
+    //     title: 'Bot de Música Discord',
+    //     description: 'Bot de música dockerizado para Discord con funcionalidades avanzadas',
+    //     image: '/project3.jpg',
+    //     repositorio: 'https://github.com/dotir/BotMusic_Olympus',
+    //     demo: '#',
+    //     technologies: ['Python', 'Discord.js', 'Docker']
+    // }
 ];
 
 const Projects = () => (
