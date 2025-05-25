@@ -15,7 +15,7 @@ const Footer = () => (
           <FaFacebook size={24} />
         </a>
       </div>
-      <p>© 2024 Irving Llerena. All Rights Reserved.</p>
+      <p>© 2025 Irving Llerena. All Rights Reserved.</p>
     </div>
   </footer>
 );
