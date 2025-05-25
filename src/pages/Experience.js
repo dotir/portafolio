@@ -16,6 +16,19 @@ const experiences = [
     ]
   },
   {
+    title: 'Apoyo Nucleo Ejecutor',
+    company: 'Junta de Usuarios La Joya, Con punche Perú',
+    location: 'La Joya, Arequipa, Perú',
+    duration: 'Octubre 2024 - Enero 2025',
+    description: 'Apoyo en la ejecución de mantenimiento de canales de regadio de la Joya.',
+    responsibilities: [
+      'Supervisión de trabajos de mantenimiento',
+      'Coordinación con equipos de trabajo',
+      'Gestión de recursos y materiales',
+      'Elaboración de informes de avance'
+    ]
+  },
+  {
     title: 'Desarrollo de Software',
     company: 'Veox',
     location: 'Arequipa, Perú',
