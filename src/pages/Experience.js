@@ -3,6 +3,19 @@ import { FaBriefcase, FaCalendar, FaBuilding } from 'react-icons/fa';
 
 const experiences = [
   {
+    title: 'Desarrollador Odoo',
+    company: 'IT GRUPO',
+    location: 'Arequipa, Perú',
+    duration: 'Abril 2025 - Presente',
+    description: 'Desarrollo y personalización de módulos Odoo para mejorar la funcionalidad del sistema ERP.',
+    responsibilities: [
+      'Desarrollo de módulos personalizados en Odoo',
+      'Integración de Odoo con otros sistemas',
+      'Optimización de procesos empresariales',
+      'Soporte técnico y mantenimiento de sistemas Odoo'
+    ]
+  },
+  {
     title: 'Desarrollo de Software',
     company: 'Veox',
     location: 'Arequipa, Perú',
