@@ -32,6 +32,15 @@ const About = () => (
                     <div className="space-y-3">
                         <div className="flex items-center space-x-3">
                             <FaGraduationCap className="text-blue-600 text-xl" />
+<span className="dark:text-gray-200">Full Stack - EGG</span>
+                        </div>
+                        <div className="flex items-center space-x-3 pl-7">
+<span className="text-sm text-gray-600 dark:text-gray-200">2024</span>
+                        </div>
+                    </div>
+                    <div className="space-y-3">
+                        <div className="flex items-center space-x-3">
+                            <FaGraduationCap className="text-blue-600 text-xl" />
 <span className="dark:text-gray-200">Ingeniero de Sistemas - Universidad Tecnologica del Peru</span>
                         </div>
                         <div className="flex items-center space-x-3 pl-7">
