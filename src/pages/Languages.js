@@ -16,6 +16,8 @@ const technologies = {
     { name: 'Bootstrap', icon: <FaBootstrap size={48} className="text-purple-700" />, level: 'Intermedio' },
     { name: 'Nuxt.js', icon: <SiNuxtdotjs size={48} className="text-green-500" />, level: 'Básico' },
     { name: 'Django', icon: <SiDjango size={48} className="text-green-500" />, level: 'Básico' },
+    //flutter
+    { name: 'Flutter', icon: <SiFlutter size={48} className="text-blue-400" />, level: 'Básico' },
   ],
   backend: [
     { name: 'Node.js', icon: <FaNodeJs size={48} className="text-green-500" />, level: 'Intermedio' },

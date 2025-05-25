@@ -19,6 +19,12 @@ const projects = [
         demo: '#',
         technologies: ['Chrome Extension', 'FaceAPI', 'JavaScript']
     },
+    {
+        title: 'Aplicacion toma de asistencia por código QR',
+        description: 'Aplicación en flutter para la toma de asistencia utilizando códigos QR',
+        image: '/project4.jpg',
+        technologies: ['Flutter', 'Dart',],
+    }
     // {
     //     title: 'Bot de Música Discord',
     //     description: 'Bot de música dockerizado para Discord con funcionalidades avanzadas',
@@ -38,7 +44,7 @@ const Projects = () => (
                 Cada uno representa diferentes desafíos y soluciones tecnológicas.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
                 {projects.map((project, index) => (
                     <ProjectCard key={index} project={project} />
                 ))}
