@@ -24,6 +24,13 @@ const projects = [
         description: 'Aplicación en flutter para la toma de asistencia utilizando códigos QR',
         image: '/project4.jpg',
         technologies: ['Flutter', 'Dart',],
+    },
+    {
+        title: 'Aplicacion anotar tareas',
+        description: 'Aplicación en React.js para anotar tareas pendientes',
+        image: '/project5.png',
+        demo: 'https://to-do-list-azure-one.vercel.app/',
+        technologies: ['React.js', 'JavaScript', 'CSS'],
     }
     // {
     //     title: 'Bot de Música Discord',
