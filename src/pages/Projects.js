@@ -31,15 +31,15 @@ const projects = [
         image: '/project5.png',
         demo: 'https://to-do-list-azure-one.vercel.app/',
         technologies: ['React.js', 'JavaScript', 'CSS'],
-    }
-    // {
-    //     title: 'Bot de Música Discord',
-    //     description: 'Bot de música dockerizado para Discord con funcionalidades avanzadas',
-    //     image: '/project3.jpg',
-    //     repositorio: 'https://github.com/dotir/BotMusic_Olympus',
-    //     demo: '#',
-    //     technologies: ['Python', 'Discord.js', 'Docker']
-    // }
+    },
+    // projecto juego tres en raya
+    {
+        title: 'Juego Tres en Raya',
+        description: 'Juego de tres en raya desarrollado con React.js y Tailwind CSS',
+        image: '/project6.png',
+        demo: 'https://tic-tac-toe-psi-smoky.vercel.app/',
+        technologies: ['React.js', 'Tailwind CSS', 'JavaScript'],
+    },
 ];
 
 const Projects = () => (
