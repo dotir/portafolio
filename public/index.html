@@ -1,43 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Portafolio Irving Llerena"
-    />
+    
+    <!-- SEO Meta Tags -->
+    <title>Irving Llerena - Desarrollador Full Stack | Portafolio Profesional</title>
+    <meta name="description" content="Desarrollador Full Stack especializado en React, Node.js, Odoo y tecnologías modernas. Experiencia en desarrollo web, ERP y consultoría en facturación electrónica en Arequipa, Perú." />
+    <meta name="keywords" content="desarrollador full stack, desarrollador web, React, Node.js, Odoo, facturación electrónica, Arequipa, Perú, programador, software, Irving Llerena" />
+    <meta name="author" content="Irving Llerena" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Irving Llerena - Desarrollador Full Stack" />
+    <meta property="og:description" content="Desarrollador Full Stack con experiencia en React, Node.js, Odoo y facturación electrónica. Portafolio profesional con proyectos reales." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://irvingllerena.com" />
+    <meta property="og:image" content="https://irvingllerena.com/fotoirving.jpg" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Irving Llerena - Desarrollador Full Stack" />
+    <meta name="twitter:description" content="Desarrollador Full Stack especializado en React, Node.js y Odoo. Experiencia en desarrollo web y consultoría en Arequipa, Perú." />
+    <meta name="twitter:image" content="https://irvingllerena.com/fotoirving.jpg" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://irvingllerena.com" />
+    
+    <!-- Language and Region -->
+    <meta property="og:locale" content="es_PE" />
+    <meta name="language" content="Spanish" />
+    
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Irving</title>
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Irving Llerena",
+      "jobTitle": "Desarrollador Full Stack",
+      "url": "https://irvingllerena.com",
+      "description": "Desarrollador Full Stack especializado en React, Node.js, Odoo y tecnologías modernas",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Arequipa",
+        "addressCountry": "PE"
+      },
+      "knowsAbout": [
+        "React",
+        "Node.js",
+        "Odoo",
+        "JavaScript",
+        "TypeScript",
+        "Facturación Electrónica",
+        "Desarrollo Web"
+      ],
+      "sameAs": [
+        "https://github.com/dotir",
+        "https://www.linkedin.com/in/irving-hector-llerena-bejarano-4b90aa210/"
+      ]
+    }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

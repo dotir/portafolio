@@ -1,3 +1,13 @@
-# https://www.robotstxt.org/robotstxt.html
+# Allow all crawlers
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap location
+Sitemap: https://irvingllerena.com/sitemap.xml
+
+# Block access to development files
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /build/
+Disallow: /*.js$
+Disallow: /*.css$

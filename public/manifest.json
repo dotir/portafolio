@@ -1,6 +1,7 @@
 {
-  "short_name": "Irving App",
-  "name": "Irving Llerena",
+  "short_name": "Irving Llerena",
+  "name": "Irving Llerena - Desarrollador Full Stack",
+  "description": "Portafolio profesional de Irving Llerena, desarrollador Full Stack especializado en React, Node.js, Odoo y tecnologías modernas en Arequipa, Perú.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,8 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "es-PE"
 }
