@@ -23,6 +23,7 @@ const technologies = {
     { name: 'Node.js', icon: <FaNodeJs size={48} className="text-green-500" />, level: 'Intermedio' },
     { name: 'Java', icon: <FaJava size={48} className="text-blue-400" />, level: 'Intermedio' },
     { name: 'Python', icon: <FaPython size={48} className="text-blue-400" />, level: 'Intermedio' },
+    { name: 'Odoo', icon: <FaPython size={48} className="text-amber-600" />, level: 'Intermedio' },
     { name: 'MySQL', icon: <SiMysql size={48} className="text-blue-400" />, level: 'Intermedio' },
     { name: 'PostgreSQL', icon: <SiPostgresql size={48} className="text-blue-400" />, level: 'Intermedio' },
     { name: 'PHP', icon: <FaPhp size={48} className="text-blue-400" />, level: 'Básico' },
