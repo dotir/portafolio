@@ -29,6 +29,19 @@ const experiences = [
     ]
   },
   {
+    title: 'Apoyo en Facturación',
+    company: 'Independiente',
+    location: 'Arequipa, Perú',
+    duration: '2023 - Presente',
+    description: 'Apoyo en el envío de facturas electrónicas para diferentes empresas utilizando sistemas de facturación.',
+    responsibilities: [
+      'Gestión y envío de facturas electrónicas para múltiples empresas',
+      'Asesoramiento en procesos de facturación digital',
+      'Resolución de problemas con sistemas de facturación',
+      'Mantenimiento de registros y reportes de facturación'
+    ]
+  },
+  {
     title: 'Desarrollo de Software',
     company: 'Veox',
     location: 'Arequipa, Perú',

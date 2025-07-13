@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import { FaReact,FaAngular , FaJsSquare, FaHtml5, FaCss3Alt, FaNodeJs, FaPython, FaJava, FaVuejs,FaPhp,FaBootstrap  } from 'react-icons/fa';
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql,SiPostgresql,SiNuxtdotjs,SiDjango,SiFlutter  } from "react-icons/si";
