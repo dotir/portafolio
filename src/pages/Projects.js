@@ -4,6 +4,12 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
     {
+        title: 'Módulo de Facturación y Guía de Remisión - Odoo 17',
+        description: 'Desarrollo de módulo para actualizar facturación electrónica y guías de remisión del sistema nativo de Odoo v17, implementado como parte del back office empresarial',
+        image: '/proyecto1.png',
+        technologies: ['Odoo 17', 'Python', 'XML', 'JavaScript', 'PostgreSQL']
+    },
+    {
         title: 'Sistema de Reconocimiento Facial',
         description: 'Sistema de reconocimiento del rostro para la toma de asistencia utilizando el api de Faceapi',
         image: '/project1.png',

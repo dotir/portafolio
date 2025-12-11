@@ -6,7 +6,7 @@ const experiences = [
     title: 'Desarrollador Odoo',
     company: 'IT GRUPO',
     location: 'Arequipa, Perú',
-    duration: 'Abril 2025 - Presente',
+    duration: 'Abril 2025 - Diciembre 2025',
     description: 'Desarrollo y personalización de módulos Odoo para mejorar la funcionalidad del sistema ERP.',
     responsibilities: [
       'Desarrollo de módulos personalizados en Odoo',
