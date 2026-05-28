@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaArrowDown, FaCode,FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaArrowDown, FaFacebook } from 'react-icons/fa';
 
 const Hero = () => (
 <section className="bg-gradient-to-br from-blue-600 to-blue-800 dark:from-gray-900 dark:to-gray-700 text-white min-h-screen flex items-center justify-center relative">
