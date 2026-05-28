@@ -8,12 +8,12 @@ const Hero = () => (
       <div className="text-center max-w-3xl mx-auto space-y-6">
         <h2 className="text-xl mb-2">👋 Bienvenido a mi portafolio</h2>
 <h1 className="text-5xl font-bold mb-4 animate-fade-in text-gray-100 dark:text-gray-200">
-          Hola, Soy Irving Llerena
+          Hola, soy Irving Llerena
         </h1>
 <p className="text-2xl mb-8 text-gray-200 dark:text-gray-400">
-          Full Stack Developer
+          Desarrollador de Software Full Stack
 <span className="block text-blue-200 dark:text-gray-300 text-xl mt-2">
-            Apasionado por crear soluciones web innovadoras
+            Experiencia en Odoo, facturación electrónica, React, Vue.js, Python y sistemas empresariales
           </span>
         </p>
         

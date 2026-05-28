@@ -13,6 +13,7 @@ const Home = () => (
         <Languages />
         <Projects />
         <Experience />
+        <Contact />
     </div>
 );
 

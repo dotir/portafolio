@@ -16,23 +16,10 @@ const experiences = [
     ]
   },
   {
-    title: 'Apoyo Nucleo Ejecutor',
-    company: 'Junta de Usuarios La Joya, Con punche Perú',
-    location: 'La Joya, Arequipa, Perú',
-    duration: 'Octubre 2024 - Enero 2025',
-    description: 'Apoyo en la ejecución de mantenimiento de canales de regadio de la Joya.',
-    responsibilities: [
-      'Supervisión de trabajos de mantenimiento',
-      'Coordinación con equipos de trabajo',
-      'Gestión de recursos y materiales',
-      'Elaboración de informes de avance'
-    ]
-  },
-  {
-    title: 'Apoyo en Facturación',
+    title: 'Facturación Electrónica y Soporte de Sistemas',
     company: 'Independiente',
     location: 'Arequipa, Perú',
-    duration: '2023 - Presente',
+    duration: '2023 - Mayo 2026',
     description: 'Apoyo en el envío de facturas electrónicas para diferentes empresas utilizando sistemas de facturación.',
     responsibilities: [
       'Gestión y envío de facturas electrónicas para múltiples empresas',
@@ -42,23 +29,37 @@ const experiences = [
     ]
   },
   {
-    title: 'Desarrollo de Software',
+    title: 'Practicante de Sistemas',
+    company: 'Transportes Arias E.I.R.L.',
+    location: 'Arequipa, Perú',
+    duration: 'Agosto 2023 - Enero 2024',
+    description: 'Soporte técnico, mantenimiento de sistemas de información y mejora de aplicaciones internas para procesos administrativos.',
+    responsibilities: [
+      'Soporte técnico y mantenimiento de sistemas de información',
+      'Participación en la mejora de aplicaciones internas',
+      'Apoyo en seguridad informática y protección de datos',
+      'Seguimiento de incidencias de usuarios y equipos informáticos'
+    ]
+  },
+  {
+    title: 'Programador de Software',
     company: 'Veox',
     location: 'Arequipa, Perú',
-    duration: 'Oct 2022 - Ene 2023',
-    description: 'Desarrollo de aplicaciones web utilizando tecnologías modernas.',
+    duration: 'Octubre 2022 - Enero 2023',
+    description: 'Desarrollo de aplicaciones web con frontend en Vue.js y backend en Django/Python.',
     responsibilities: [
-      'Desarrollo de aplicaciones web con Angular y React',
-      'Implementación de APIs RESTful con Node.js',
-      'Trabajo en equipo usando metodologías ágiles',
-      'Mantenimiento y mejora de aplicaciones existentes'
+      'Diseño e implementación de interfaces dinámicas y responsivas con Vue.js',
+      'Desarrollo y mantenimiento de APIs RESTful con Django y Python',
+      'Administración de bases de datos PostgreSQL',
+      'Documentación y pruebas de APIs con Swagger y Postman',
+      'Trabajo colaborativo con Git, GitHub/GitLab y metodología Scrum'
     ]
   },
   {
     title: 'Soporte Técnico',
     company: 'Ugel La Joya',
     location: 'Arequipa, Perú',
-    duration: 'Ene 2017 - Jul 2017',
+    duration: 'Enero 2017 - Julio 2017',
     description: 'Soporte técnico y mantenimiento de sistemas informáticos.',
     responsibilities: [
       'Mantenimiento de equipos de cómputo',

@@ -1,32 +1,27 @@
- import React from 'react';
-import { FaReact,FaAngular , FaJsSquare, FaHtml5, FaCss3Alt, FaNodeJs, FaPython, FaJava, FaVuejs,FaPhp,FaBootstrap  } from 'react-icons/fa';
+import React from 'react';
+import { FaReact, FaJsSquare, FaNodeJs, FaPython, FaJava, FaVuejs, FaDocker, FaGitAlt, FaGithub } from 'react-icons/fa';
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMysql,SiPostgresql,SiNuxtdotjs,SiDjango,SiFlutter  } from "react-icons/si";
+import { SiPostgresql, SiDjango, SiOdoo } from "react-icons/si";
 
 const technologies = {
   frontend: [
     { name: 'JavaScript', icon: <FaJsSquare size={48} className="text-yellow-500" />, level: 'Intermedio' },
     { name: 'React', icon: <FaReact size={48} className="text-blue-500" />, level: 'Intermedio' },
-    // angular
-    { name: 'Angular', icon: <FaAngular size={48} className="text-red-600" />, level: 'Intermedio' },
-    { name: 'HTML5', icon: <FaHtml5 size={48} className="text-orange-600" />, level: 'Intermedio' },
-    { name: 'Tailwind CSS', icon: <RiTailwindCssFill size={48} className="text-blue-400" />, level: 'Intermedio' },
     { name: 'Vue.js', icon: <FaVuejs size={48} className="text-green-700" />, level: 'Intermedio' },
-    { name: 'CSS', icon: <FaCss3Alt size={48} className="text-blue-500" />, level: 'Intermedio' },
-    { name: 'Bootstrap', icon: <FaBootstrap size={48} className="text-purple-700" />, level: 'Intermedio' },
-    { name: 'Nuxt.js', icon: <SiNuxtdotjs size={48} className="text-green-500" />, level: 'Básico' },
-    { name: 'Django', icon: <SiDjango size={48} className="text-green-500" />, level: 'Básico' },
-    //flutter
-    { name: 'Flutter', icon: <SiFlutter size={48} className="text-blue-400" />, level: 'Básico' },
+    { name: 'Tailwind CSS', icon: <RiTailwindCssFill size={48} className="text-blue-400" />, level: 'Intermedio' },
   ],
   backend: [
     { name: 'Node.js', icon: <FaNodeJs size={48} className="text-green-500" />, level: 'Intermedio' },
-    { name: 'Java', icon: <FaJava size={48} className="text-blue-400" />, level: 'Intermedio' },
     { name: 'Python', icon: <FaPython size={48} className="text-blue-400" />, level: 'Intermedio' },
-    { name: 'Odoo', icon: <FaPython size={48} className="text-amber-600" />, level: 'Intermedio' },
-    { name: 'MySQL', icon: <SiMysql size={48} className="text-blue-400" />, level: 'Intermedio' },
+    { name: 'Django', icon: <SiDjango size={48} className="text-green-700" />, level: 'Intermedio' },
+    { name: 'Java', icon: <FaJava size={48} className="text-blue-400" />, level: 'Intermedio' },
+    { name: 'Odoo', icon: <SiOdoo size={48} className="text-purple-700" />, level: 'Intermedio' },
     { name: 'PostgreSQL', icon: <SiPostgresql size={48} className="text-blue-400" />, level: 'Intermedio' },
-    { name: 'PHP', icon: <FaPhp size={48} className="text-blue-400" />, level: 'Básico' },
+  ],
+  tools: [
+    { name: 'Docker', icon: <FaDocker size={48} className="text-blue-500" />, level: 'Intermedio' },
+    { name: 'Git', icon: <FaGitAlt size={48} className="text-orange-600" />, level: 'Intermedio' },
+    { name: 'GitHub', icon: <FaGithub size={48} className="text-gray-800 dark:text-gray-200" />, level: 'Intermedio' },
   ]
 };
 
@@ -54,9 +49,10 @@ const TechnologyCard = ({ title, technologies }) => (
 const Languages = () => (
   <section id="languages" className="container mx-auto p-8">
     <h2 className="text-4xl font-bold text-center mb-8">Tecnologías</h2>
-    <div className="grid md:grid-cols-2 gap-8">
+    <div className="grid md:grid-cols-3 gap-8">
       <TechnologyCard title="Frontend" technologies={technologies.frontend} />
       <TechnologyCard title="Backend" technologies={technologies.backend} />
+      <TechnologyCard title="Herramientas" technologies={technologies.tools} />
     </div>
   </section>
 );
