@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
     {
@@ -10,41 +9,50 @@ const projects = [
         technologies: ['Odoo 17', 'Python', 'XML', 'JavaScript', 'PostgreSQL']
     },
     {
+        title: 'Sistema de Gestión de Incidencias',
+        description: 'Aplicación móvil y backend para registrar, gestionar y dar seguimiento a incidencias. Incluye API REST, autenticación y documentación con Swagger.',
+        image: 'https://opengraph.githubassets.com/portfolio-incidencias/dotir/SistemaIncidencias',
+        links: [
+            {
+                label: 'Ver repositorio frontend de Sistema de Incidencias',
+                href: 'https://github.com/dotir/SistemaIncidencias',
+                type: 'repo',
+            },
+            {
+                label: 'Ver repositorio backend de Sistema de Incidencias',
+                href: 'https://github.com/dotir/SistemaIncidenciasBackEnd',
+                type: 'repo',
+            },
+        ],
+        technologies: ['React Native', 'Expo', 'NestJS', 'TypeScript', 'Prisma', 'Swagger']
+    },
+    {
         title: 'Sistema de Reconocimiento Facial',
-        description: 'Sistema de reconocimiento del rostro para la toma de asistencia utilizando el api de Faceapi',
+        description: 'Sistema de reconocimiento facial para la toma de asistencia y evaluaciones utilizando FaceAPI.',
         image: '/project1.png',
         repositorio: 'https://github.com/dotir/Reconocimientov2',
-        demo: '#',
+        demo: 'https://reconocimientov2.vercel.app/',
         technologies: ['Angular', 'FaceAPI', 'TypeScript', 'Dockerfile']
     },
     {
-        title: 'Sistema Almacenar Contraseñas',
-        description: 'Extensión de Chrome para almacenar las contraseñas de redes sociales usando FaceApi',
-        image: '/project2.png',
-        repositorio: 'https://github.com/dotir/ProxExtension',
-        demo: '#',
-        technologies: ['Chrome Extension', 'FaceAPI', 'JavaScript']
-    },
-    {
-        title: 'Aplicacion toma de asistencia por código QR',
+        title: 'Aplicación de toma de asistencia por código QR',
         description: 'Aplicación en flutter para la toma de asistencia utilizando códigos QR',
         image: '/project4.jpg',
         technologies: ['Flutter', 'Dart',],
     },
     {
-        title: 'Aplicacion anotar tareas',
-        description: 'Aplicación en React.js para anotar tareas pendientes',
-        image: '/project5.png',
-        demo: 'https://to-do-list-azure-one.vercel.app/',
-        technologies: ['React.js', 'JavaScript', 'CSS'],
+        title: 'Calculadora de Series de Fourier',
+        description: 'Aplicación desarrollada en Python para calcular y graficar series de Fourier, orientada a cálculos matemáticos y visualización de resultados.',
+        image: 'https://opengraph.githubassets.com/portfolio-fourier/dotir/CalculatorFourier',
+        repositorio: 'https://github.com/dotir/CalculatorFourier',
+        technologies: ['Python', 'Flet', 'Matplotlib']
     },
-    // projecto juego tres en raya
     {
-        title: 'Juego Tres en Raya',
-        description: 'Juego de tres en raya desarrollado con React.js y Tailwind CSS',
-        image: '/project6.png',
-        demo: 'https://tic-tac-toe-psi-smoky.vercel.app/',
-        technologies: ['React.js', 'Tailwind CSS', 'JavaScript'],
+        title: 'Bot de Música para Discord',
+        description: 'Bot desarrollado en Python con reproducción de música en canales de voz e integración de chatbot para conversaciones interactivas.',
+        image: '/project3.jpg',
+        repositorio: 'https://github.com/dotir/BotMusic_Olympus',
+        technologies: ['Python', 'discord.py', 'Docker']
     },
 ];
 

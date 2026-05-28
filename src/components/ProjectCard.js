@@ -1,7 +1,29 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
-const ProjectCard = ({ project }) => (
+const getProjectLinks = (project) => {
+    if (project.links) {
+        return project.links;
+    }
+
+    return [
+        project.repositorio && {
+            label: `Ver repositorio de ${project.title}`,
+            href: project.repositorio,
+            type: 'repo',
+        },
+        project.demo && project.demo !== '#' && {
+            label: `Ver demo de ${project.title}`,
+            href: project.demo,
+            type: 'demo',
+        },
+    ].filter(Boolean);
+};
+
+const ProjectCard = ({ project }) => {
+    const links = getProjectLinks(project);
+
+    return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
         <div className="relative">
             <img 
@@ -11,24 +33,19 @@ const ProjectCard = ({ project }) => (
             />
             <div className="absolute inset-0 bg-blue-600 opacity-0 hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
                 <div className="flex space-x-4">
-                    <a 
-                        href={project.repositorio}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white hover:text-blue-200 transition-colors"
-                    >
-                        <FaGithub size={24} />
-                    </a>
-                    {project.demo !== '#' && (
+                    {links.map((link) => (
                         <a 
-                            href={project.demo}
+                            key={link.href}
+                            href={link.href}
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label={link.label}
+                            title={link.label}
                             className="text-white hover:text-blue-200 transition-colors"
                         >
-                            <FaExternalLinkAlt size={24} />
+                            {link.type === 'demo' ? <FaExternalLinkAlt size={24} /> : <FaGithub size={24} />}
                         </a>
-                    )}
+                    ))}
                 </div>
             </div>
         </div>
@@ -48,6 +65,7 @@ const ProjectCard = ({ project }) => (
             </div>
         </div>
     </div>
-);
+    );
+};
 
 export default ProjectCard;
