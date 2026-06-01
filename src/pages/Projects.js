@@ -9,24 +9,6 @@ const projects = [
         technologies: ['Odoo 17', 'Python', 'XML', 'JavaScript', 'PostgreSQL']
     },
     {
-        title: 'Sistema de Gestión de Incidencias',
-        description: 'Aplicación móvil y backend para registrar, gestionar y dar seguimiento a incidencias. Incluye API REST, autenticación y documentación con Swagger.',
-        image: 'https://opengraph.githubassets.com/portfolio-incidencias/dotir/SistemaIncidencias',
-        links: [
-            {
-                label: 'Ver repositorio frontend de Sistema de Incidencias',
-                href: 'https://github.com/dotir/SistemaIncidencias',
-                type: 'repo',
-            },
-            {
-                label: 'Ver repositorio backend de Sistema de Incidencias',
-                href: 'https://github.com/dotir/SistemaIncidenciasBackEnd',
-                type: 'repo',
-            },
-        ],
-        technologies: ['React Native', 'Expo', 'NestJS', 'TypeScript', 'Prisma', 'Swagger']
-    },
-    {
         title: 'Sistema de Reconocimiento Facial',
         description: 'Sistema de reconocimiento facial para la toma de asistencia y evaluaciones utilizando FaceAPI.',
         image: '/project1.png',
