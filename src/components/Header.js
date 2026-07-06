@@ -5,7 +5,13 @@ import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const stored = localStorage.getItem('darkMode');
+    if (stored !== null) {
+      return stored === 'true';
+    }
+    return Boolean(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +27,7 @@ const Header = () => {
     } else {
       document.documentElement.classList.remove('dark');
     }
+    localStorage.setItem('darkMode', darkMode);
   }, [darkMode]);
 
   const toggleNav = () => setNavOpen(!navOpen);
@@ -62,6 +69,7 @@ const Header = () => {
             {/* Dark Mode Toggle Button */}
             <button
               onClick={toggleDarkMode}
+              aria-label={darkMode ? 'Activar modo claro' : 'Activar modo oscuro'}
               className={`p-2 rounded-lg transition-colors duration-300 ${
                 scrolled 
                   ? 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700' 
@@ -76,6 +84,7 @@ const Header = () => {
           <div className="md:hidden flex items-center space-x-2">
             <button
               onClick={toggleDarkMode}
+              aria-label={darkMode ? 'Activar modo claro' : 'Activar modo oscuro'}
               className={`p-2 rounded-lg transition-colors duration-300 ${
                 scrolled 
                   ? 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700' 
@@ -84,8 +93,10 @@ const Header = () => {
             >
               {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
             </button>
-            <button 
+            <button
               onClick={toggleNav}
+              aria-label={navOpen ? 'Cerrar menú' : 'Abrir menú'}
+              aria-expanded={navOpen}
               className={`p-2 rounded-lg transition-colors duration-300 ${
                 scrolled 
                   ? 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700' 
@@ -100,7 +111,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         <div className={`md:hidden transform transition-transform duration-300 ease-in-out ${
           navOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
-        } absolute top-16 left-0 right-0 bg-white shadow-lg`}>
+        } absolute top-16 left-0 right-0 bg-white dark:bg-gray-800 shadow-lg`}>
           <ul className="flex flex-col p-4">
             {[
               { name: 'Inicio', path: '/' },
@@ -112,7 +123,7 @@ const Header = () => {
               <li key={item.name}>
                 <a
                   href={item.path}
-                  className="block py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 px-4 rounded transition-colors"
+                  className="block py-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-700 px-4 rounded transition-colors"
                   onClick={toggleNav}
                 >
                   {item.name}
