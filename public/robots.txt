@@ -9,5 +9,3 @@ Sitemap: https://irvingllerena.vercel.app/sitemap.xml
 Disallow: /node_modules/
 Disallow: /src/
 Disallow: /build/
-Disallow: /*.js$
-Disallow: /*.css$
