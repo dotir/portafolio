@@ -29,7 +29,8 @@ const contactLinks = [
 ];
 
 const Contact = () => (
-  <section id="contact" className="container mx-auto p-8 bg-white dark:bg-gray-900">
+  <section id="contact" className="bg-white dark:bg-gray-900 py-16">
+    <div className="container mx-auto px-4">
     <h2 className="text-4xl font-bold text-center mb-4 text-gray-800 dark:text-gray-200">Contáctame</h2>
     <p className="text-center text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10">
       Si deseas conversar sobre oportunidades laborales, proyectos de software o soluciones empresariales,
@@ -60,6 +61,7 @@ const Contact = () => (
           <span className="block text-gray-600 dark:text-gray-400">Arequipa, Perú</span>
         </span>
       </div>
+    </div>
     </div>
   </section>
 );

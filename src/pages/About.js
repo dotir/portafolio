@@ -2,19 +2,10 @@ import React from 'react';
 import { FaGraduationCap, FaMapMarkerAlt, FaCode, FaLaptopCode } from 'react-icons/fa';
 
 const About = () => (
-<section id="about" className="container mx-auto p-8 bg-white dark:bg-gray-900">
+<section id="about" className="bg-white dark:bg-gray-900 py-16">
+    <div className="container mx-auto px-4">
 <h2 className="text-4xl font-bold text-center mb-8 text-gray-800 dark:text-gray-200">Sobre mí</h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {/* Columna de imagen */}
-            <div className="flex justify-center items-center">
-                <img 
-                    src="/fotoirving.jpg" 
-                    alt="Irving Llerena" 
-                    className="rounded-full w-64 h-64 object-cover shadow-lg"
-                />
-            </div>
-
-            {/* Columna de información */}
+        <div className="max-w-3xl mx-auto">
             <div className="space-y-6">
                 <div className="text-lg">
                     <p className="mb-4 text-gray-800 dark:text-gray-200">
@@ -63,7 +54,7 @@ const About = () => (
                 </div>
 
                 {/* Intereses */}
-                <div className="border-t pt-4">
+                <div className="border-t dark:border-gray-700 pt-4">
 <h3 className="text-xl font-semibold mb-3 dark:text-gray-200">Intereses</h3>
                     <div className="grid grid-cols-2 gap-4">
                         <div className="flex items-center space-x-2">
@@ -78,6 +69,7 @@ const About = () => (
                 </div>
             </div>
         </div>
+    </div>
     </section>
 );
 

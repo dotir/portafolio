@@ -7,7 +7,7 @@ import WhatsAppButton from './components/WhatsAppButton';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen relative">
+      <div className="flex flex-col min-h-screen relative bg-white dark:bg-gray-900">
         <Header />
         <main className="flex-grow">
           <Routes>

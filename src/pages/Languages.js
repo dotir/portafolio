@@ -47,12 +47,14 @@ const TechnologyCard = ({ title, technologies }) => (
 );
 
 const Languages = () => (
-  <section id="languages" className="container mx-auto p-8">
-    <h2 className="text-4xl font-bold text-center mb-8">Tecnologías</h2>
-    <div className="grid md:grid-cols-3 gap-8">
-      <TechnologyCard title="Frontend" technologies={technologies.frontend} />
-      <TechnologyCard title="Backend" technologies={technologies.backend} />
-      <TechnologyCard title="Herramientas" technologies={technologies.tools} />
+  <section id="languages" className="bg-white dark:bg-gray-900 py-16">
+    <div className="container mx-auto px-4">
+      <h2 className="text-4xl font-bold text-center mb-8 text-gray-800 dark:text-gray-200">Tecnologías</h2>
+      <div className="grid md:grid-cols-3 gap-8">
+        <TechnologyCard title="Frontend" technologies={technologies.frontend} />
+        <TechnologyCard title="Backend" technologies={technologies.backend} />
+        <TechnologyCard title="Herramientas" technologies={technologies.tools} />
+      </div>
     </div>
   </section>
 );
