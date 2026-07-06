@@ -1,11 +1,16 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaArrowDown, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaArrowDown, FaFacebook, FaFileDownload } from 'react-icons/fa';
 
 const Hero = () => (
 <section className="bg-gradient-to-br from-blue-600 to-blue-800 dark:from-gray-900 dark:to-gray-700 text-white min-h-screen flex items-center justify-center relative">
     <div className="container mx-auto px-4">
       {/* Centered Content */}
       <div className="text-center max-w-3xl mx-auto space-y-6">
+        <img
+          src="/fotoirving.jpg"
+          alt="Irving Llerena"
+          className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover mx-auto border-4 border-white/40 shadow-xl"
+        />
         <h2 className="text-xl mb-2">👋 Bienvenido a mi portafolio</h2>
 <h1 className="text-5xl font-bold mb-4 animate-fade-in text-gray-100 dark:text-gray-200">
           Hola, soy Irving Llerena
@@ -18,7 +23,7 @@ const Hero = () => (
         </p>
         
         {/* Buttons */}
-        <div className="space-x-4">
+        <div className="flex flex-wrap justify-center gap-4">
           <a 
             href="https://wa.me/+51980252537" 
             className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold inline-block hover:bg-blue-100 transition-colors"
@@ -27,11 +32,19 @@ const Hero = () => (
           >
             Contáctame
           </a>
-          <a 
+          <a
             href="#projects"
             className="border-2 border-white text-white px-6 py-3 rounded-full font-semibold inline-block hover:bg-white hover:text-blue-600 transition-colors"
           >
             Ver Proyectos
+          </a>
+          <a
+            href="/cv-irving-llerena.pdf"
+            download="CV-Irving-Llerena.pdf"
+            className="border-2 border-white text-white px-6 py-3 rounded-full font-semibold inline-flex items-center gap-2 hover:bg-white hover:text-blue-600 transition-colors"
+          >
+            <FaFileDownload />
+            Descargar CV
           </a>
         </div>
 
