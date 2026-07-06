@@ -37,20 +37,6 @@ const projects = [
             resultado: 'El registro de asistencia pasó a ser instantáneo y centralizado, directamente desde el celular.',
         },
     },
-    {
-        title: 'Calculadora de Series de Fourier',
-        description: 'Aplicación desarrollada en Python para calcular y graficar series de Fourier, orientada a cálculos matemáticos y visualización de resultados.',
-        image: 'https://opengraph.githubassets.com/portfolio-fourier/dotir/CalculatorFourier',
-        repositorio: 'https://github.com/dotir/CalculatorFourier',
-        technologies: ['Python', 'Flet', 'Matplotlib']
-    },
-    {
-        title: 'Bot de Música para Discord',
-        description: 'Bot desarrollado en Python con reproducción de música en canales de voz e integración de chatbot para conversaciones interactivas.',
-        image: '/project3.jpg',
-        repositorio: 'https://github.com/dotir/BotMusic_Olympus',
-        technologies: ['Python', 'discord.py', 'Docker']
-    },
 ];
 
 const Projects = () => (
