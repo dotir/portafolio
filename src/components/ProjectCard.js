@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaGithub, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const getProjectLinks = (project) => {
     if (project.links) {
@@ -22,6 +22,7 @@ const getProjectLinks = (project) => {
 
 const ProjectCard = ({ project }) => {
     const links = getProjectLinks(project);
+    const [caseOpen, setCaseOpen] = useState(false);
 
     return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
@@ -55,7 +56,7 @@ const ProjectCard = ({ project }) => {
             <p className="text-gray-600 mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, index) => (
-                    <span 
+                    <span
                         key={index}
                         className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
                     >
@@ -63,6 +64,35 @@ const ProjectCard = ({ project }) => {
                     </span>
                 ))}
             </div>
+
+            {project.caseStudy && (
+                <div className="mt-4">
+                    <button
+                        onClick={() => setCaseOpen(!caseOpen)}
+                        aria-expanded={caseOpen}
+                        className="inline-flex items-center gap-1 text-blue-600 text-sm font-semibold hover:text-blue-800 transition-colors"
+                    >
+                        {caseOpen ? 'Ver menos' : 'Ver caso de estudio'}
+                        {caseOpen ? <FaChevronUp size={12} /> : <FaChevronDown size={12} />}
+                    </button>
+                    {caseOpen && (
+                        <dl className="mt-3 space-y-3 text-sm border-t pt-3">
+                            <div>
+                                <dt className="font-semibold text-gray-800">Problema</dt>
+                                <dd className="text-gray-600">{project.caseStudy.problema}</dd>
+                            </div>
+                            <div>
+                                <dt className="font-semibold text-gray-800">Solución</dt>
+                                <dd className="text-gray-600">{project.caseStudy.solucion}</dd>
+                            </div>
+                            <div>
+                                <dt className="font-semibold text-gray-800">Resultado</dt>
+                                <dd className="text-gray-600">{project.caseStudy.resultado}</dd>
+                            </div>
+                        </dl>
+                    )}
+                </div>
+            )}
         </div>
     </div>
     );
