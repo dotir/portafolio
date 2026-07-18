@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGraduationCap, FaMapMarkerAlt, FaCode, FaLaptopCode } from 'react-icons/fa';
+import { FaGraduationCap, FaMapMarkerAlt, FaCode, FaLaptopCode, FaTrophy, FaExternalLinkAlt } from 'react-icons/fa';
 
 const About = () => (
 <section id="about" className="bg-white dark:bg-gray-900 py-16">
@@ -50,6 +50,29 @@ const About = () => (
                     <div className="flex items-center space-x-3">
                         <FaMapMarkerAlt className="text-blue-600 text-xl" />
 <span className="dark:text-gray-200">Arequipa, Perú</span>
+                    </div>
+                </div>
+
+                {/* Reconocimientos */}
+                <div className="border-t dark:border-gray-700 pt-4">
+<h3 className="text-xl font-semibold mb-3 dark:text-gray-200">Reconocimientos</h3>
+                    <div className="flex items-start space-x-3">
+                        <FaTrophy className="text-yellow-500 text-xl mt-1 flex-shrink-0" />
+                        <div>
+<p className="dark:text-gray-200 font-medium">1er puesto — Hackathon UTP · El Comercio (2021)</p>
+<p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                                Con el equipo Atipax desarrollamos ÑanSuyai, una app vinculada a una pulsera inteligente para enviar alertas de emergencia ante situaciones de violencia de género, con soporte en español y quechua. Ganamos el primer lugar entre 17 equipos en una jornada de 48 horas.
+                            </p>
+                            <a
+                                href="https://www.utp.edu.pe/noticias/sites/default/files/documentos/2021-12/BoletinUTPChiclayoDiciembre.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center space-x-1 text-sm text-blue-600 hover:underline mt-1"
+                            >
+                                <span>Ver publicación oficial de la UTP</span>
+                                <FaExternalLinkAlt className="text-xs" />
+                            </a>
+                        </div>
                     </div>
                 </div>
 
