@@ -3,6 +3,11 @@ import { FaBriefcase, FaCalendar, FaBuilding } from 'react-icons/fa';
 
 const experiences = [
   {
+    title: 'Consultoría de Desarrollo de Software',
+    company: 'INFINITO DEVELOPMENT HOSTING DESIGN S.R.L',
+    duration: '3 de agosto de 2026 - Actualidad'
+  },
+  {
     title: 'Desarrollador Odoo',
     company: 'IT GRUPO',
     location: 'Arequipa, Perú',
@@ -89,11 +94,14 @@ const Experience = () => (
               
               <div className="mb-4">
 <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200">{experience.title}</h3>
-<div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 mt-2">
-                  <FaBuilding />
-                  <span>{experience.company}</span>
-                  <span>•</span>
-                  <span>{experience.location}</span>
+<div className="flex items-start gap-2 text-gray-600 dark:text-gray-400 mt-2">
+                  <FaBuilding className="shrink-0 mt-1" />
+                  <div className="min-w-0 break-words">
+                    <span>{experience.company}</span>
+                    {experience.location && (
+                      <span> • {experience.location}</span>
+                    )}
+                  </div>
                 </div>
                 <div className="flex items-center space-x-2 text-gray-500 mt-1">
                   <FaCalendar />
