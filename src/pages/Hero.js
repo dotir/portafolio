@@ -25,10 +25,8 @@ const Hero = () => (
         {/* Buttons */}
         <div className="flex flex-wrap justify-center gap-4">
           <a 
-            href="https://wa.me/+51980252537" 
+            href="#contact"
             className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold inline-block hover:bg-blue-100 transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Contáctame
           </a>

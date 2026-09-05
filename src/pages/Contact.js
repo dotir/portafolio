@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
 
 const contactLinks = [
   {
@@ -7,12 +7,6 @@ const contactLinks = [
     value: 'irvingllerena@gmail.com',
     href: 'mailto:irvingllerena@gmail.com',
     icon: <FaEnvelope size={28} />,
-  },
-  {
-    label: 'WhatsApp',
-    value: '+51 980 252 537',
-    href: 'https://wa.me/51980252537',
-    icon: <FaWhatsapp size={28} />,
   },
   {
     label: 'LinkedIn',
@@ -54,7 +48,7 @@ const Contact = () => (
         </a>
       ))}
 
-      <div className="flex items-center gap-4 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 shadow md:col-span-2">
+      <div className="flex items-center gap-4 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 shadow">
         <FaMapMarkerAlt size={28} className="text-blue-600 dark:text-blue-400" />
         <span>
           <span className="block font-semibold text-gray-800 dark:text-gray-200">Ubicación</span>

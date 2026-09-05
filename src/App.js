@@ -2,7 +2,6 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
           </Routes>
         </main>
         <Footer />
-        <WhatsAppButton />
       </div>
     </Router>
   );
